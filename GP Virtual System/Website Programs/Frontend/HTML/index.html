@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GP Patient Monitoring System</title>
+    <!-- Linking to custom CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Linking to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Linking to Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Including JavaScript file -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <!-- Left Image of the header -->
+            <img src="gp_logo.png" alt="Left Image" class="header-image mr-2">
+            <!-- Text of the header -->
+            <a class="navbar-brand mx-auto" href="#">
+                GP Virtual Monitoring System
+            </a>
+            <!-- Right Image of the header -->
+            <img src="gp_logo.png" alt="Right Image" class="header-image ml-2">
+            <!-- Navbar toggling Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<!-- Body Content -->
+<div class="container_main">
+    <div class="row">
+        <div class="col-lg-12">
+            <!-- Ask the user to choose between patient or doctor -->
+            <h2>Are you a Patient or a GP/Doctor?</h2>
+            <!-- Buttons to toggle between patient and doctor login forms -->
+            <button type="button" class="white-button" onclick="showPatientForm()">Patient</button>
+            <button type="button" class="white-button" onclick="showDoctorForm()">GP/Doctor</button>
+        </div>
+    </div>
+
+<!-- Doctor Registration Form -->
+    <form id="doctorForm">
+        <h2>Register Doctor</h2>
+        <input type="text" id="doctorName" placeholder="Doctor Name" required>
+        <input type="email" id="doctorEmail" placeholder="Doctor Email" required>
+        <input type="text" id="specialty" placeholder="Specialty" required>
+        <button type="submit">Register Doctor</button>
+    </form>
+
+    <!-- Patient Registration Form -->
+    <form id="patientForm">
+        <h2>Register Patient</h2>
+        <input type="text" id="patientName" placeholder="Patient Name" required>
+        <input type="email" id="patientEmail" placeholder="Patient Email" required>
+        <input type="number" id="doctorId" placeholder="Doctor ID" required>
+        <button type="submit">Register Patient</button>
+    </form>
+
+
+<!-- Footer -->
+<footer class="footer bg-dark text-white">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 footer-content">
+                <!-- Copyright information -->
+                <p class="font-weight-bold">&copy; 2024 GP Virtual Monitoring System. All Rights Reserved.</p>
+            </div>
+            <!-- Search form in the footer -->
+            <div class="col-lg-6">
+                <form class="form-inline float-right">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search this site" aria-label="Search">
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- JavaScript libraries -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
