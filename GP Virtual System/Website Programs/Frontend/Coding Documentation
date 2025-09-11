@@ -1,0 +1,29 @@
+Structure of the Website Programs Folder:
+
+- Frontend Folder - 
+HTML Folder:
+index.html # Login Page 
+gp-virtual-system.html # Main System Page 
+patients-medical-reports.html # Patient Report Page
+
+CSS Folder:
+style.css # Styling
+
+JACASCRIPT Folder:
+script.js # JS (search bar, validation)
+
+- Backend Folder - 
+laravel Folder # Laravel Backend 
+app/
+bootstrap/ 
+config/ 
+database/ 
+public/ 
+resources/ 
+routes/ 
+storage/ 
+tests/ 
+artisan/
+composer.json 
+.env.example 
+README.md (backend-specific)
