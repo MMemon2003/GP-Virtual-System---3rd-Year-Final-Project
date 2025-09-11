@@ -1,1 +1,13 @@
+Structure of the Website Folder:
+
+HTML Folder:
+index.html # Login Page 
+gp-virtual-system.html # Main System Page 
+patients-medical-reports.html # Patient Report Page
+
+CSS Folder:
+style.css # Styling
+
+JACASCRIPT Folder:
+script.js # JS (search bar, validation)
 
