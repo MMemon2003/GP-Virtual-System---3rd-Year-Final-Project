@@ -1,1 +1,35 @@
+## Backend – Laravel Project
+This folder contains the backend of the GP Virtual System, built with the Laravel PHP framework.
+
+What is Laravel?
+Laravel is a modern PHP framework used for building secure, scalable, and maintainable web applications.
+It provides built-in tools for:
+Authentication & Security (login, encryption, validation)
+Database Management using Eloquent ORM
+Routing (mapping URLs to functions)
+MVC Architecture (Model–View–Controller separation)
+REST APIs for communication with the frontend
+
+Why Laravel in this project?
+Laravel was chosen because it:
+Makes user authentication and logins easier (for doctors/patients).
+Connects efficiently with MySQL databases for storing medical records.
+Allows integration with the frontend (HTML, CSS, JS) through routes and APIs.
+Provides a clean project structure for long-term maintenance.
+
+Backend Structure:
+The Laravel project has the following main folders:
+app/ → Application logic (models, controllers, middleware)
+routes/ → Web and API routes (defines system URLs)
+resources/ → Views and frontend blade templates (if used with Laravel)
+config/ → Configuration files (database, app settings)
+database/ → Migrations and seeders for MySQL tables
+public/ → Entry point (index.php) and public assets
+vendor/ → External dependencies (ignored in GitHub, restored with composer install)
+
+Important Files:
+composer.json → Defines project dependencies (Laravel, Guzzle, etc.)
+.env (local only) → Environment file for database, mail, and app keys
+artisan → Laravel’s command-line tool for managing the backend
+
 
